@@ -1,0 +1,30 @@
+{
+  "name": "land-pixel-conquest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LAND — an authoritative multiplayer pixel territory strategy",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "map": "node tools/buildMap.js",
+    "test": "node --test tests/*.test.js",
+    "sim": "node tools/simulate.js",
+    "check": "node tools/check.js",
+    "test:browser": "node tools/browserSmoke.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@fontsource/press-start-2p": "^5.2.5",
+    "@playwright/test": "^1.51.0",
+    "@sparticuz/chromium": "^153.0.0"
+  }
+}
